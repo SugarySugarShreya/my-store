@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Soft Launch | Product</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+        <nav>
+
+        <div class="logo">
+            Soft Launch
+        </div>
+
+        <div class="menu">
+
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <div class="nav-actions">
+
+            <div class="menu-toggle">☰</div>
+
+            <a class="whatsapp-btn" href="contact.html">Contact</a>
+
+        </div>
+
+    </nav>
+
+    <section class="product-page">
+
+        <div class="product-gallery">
+
+            <div class="main-image-frame">
+                <img id="mainImage" class="main-product-image" src="" alt="Product">
+            </div>
+
+            <div class="thumbnail-row" id="thumbnailRow"></div>
+
+        </div>
+
+        <div class="product-info">
+
+            <p class="hero-label" id="productCategory">SIGNATURE COLLECTIBLE</p>
+
+            <h1 id="productName">Product Name</h1>
+
+            <div class="product-meta">
+                <span class="stars" id="productRating"></span>
+                <span id="productReviews"></span>
+                <span id="productStock"></span>
+            </div>
+
+            <div class="product-price-row">
+                <span class="current-price" id="productPrice">₹0</span>
+                <span class="original-price" id="productOriginalPrice"></span>
+                <span class="discount-tag" id="productDiscount"></span>
+            </div>
+
+            <div class="trust-badges">
+                <span class="trust-badge">✔ Handcrafted to Order</span>
+                <span class="trust-badge">✔ Free Shipping</span>
+                <span class="trust-badge">✔ Secure UPI Payment</span>
+                <span class="trust-badge">✔ Secure Checkout</span>
+            </div>
+
+            <p class="product-description" id="productDescription">
+                Loading...
+            </p>
+
+            <ul class="product-features" id="productFeatures">
+                <li>✔ Handcrafted Premium Quality</li>
+            </ul>
+
+            <section class="tee-product-details" id="teeProductDetails" hidden aria-labelledby="teeDetailsHeading">
+                <h2 id="teeDetailsHeading">Premium Tee Details</h2>
+                <ul class="tee-benefits">
+                    <li>210 GSM Premium Fabric</li>
+                    <li>Premium DTF Print</li>
+                    <li>Oversized Fit</li>
+                    <li>Soft &amp; Breathable</li>
+                    <li>Pre-Shrunk Fabric</li>
+                    <li>Unisex</li>
+                    <li>Made for Everyday Wear</li>
+                </ul>
+
+                <div class="size-chart-wrap">
+                    <h2>Oversized 210 GSM Size Chart</h2>
+                    <div class="size-chart-scroll" role="region" aria-label="Oversized 210 GSM size chart" tabindex="0">
+                        <table class="size-chart">
+                            <caption>All measurements are in inches.</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Measurement (Inches)</th>
+                                    <th scope="col">S</th>
+                                    <th scope="col">M</th>
+                                    <th scope="col">L</th>
+                                    <th scope="col">XL</th>
+                                    <th scope="col">XXL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><th scope="row">Chest</th><td>42</td><td>44</td><td>46</td><td>48</td><td>50</td></tr>
+                                <tr><th scope="row">Length</th><td>27.5</td><td>28</td><td>28.5</td><td>29</td><td>29.5</td></tr>
+                                <tr><th scope="row">Shoulder</th><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+                                <tr><th scope="row">Sleeve Length</th><td>8.5</td><td>9</td><td>9.5</td><td>10</td><td>10.5</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <div id="sizeSelector" class="size-selector" style="display:none;">
+                <span class="size-label">Size</span>
+                <div class="size-options" id="sizeOptions"></div>
+            </div>
+
+            <div id="customizationBlock" class="customization-block" style="display:none;">
+
+                <span class="size-label">Your Customization</span>
+                <p class="customization-hint" id="customizationHint">
+                    Upload a photo and add any details (song, names, plate number) for your piece.
+                </p>
+
+                <textarea id="customizationNotes" rows="3"
+                    placeholder="e.g. Song name, dedication, names, plate number..."></textarea>
+
+                <div class="photo-upload-zone" id="photoUploadZone">
+                    <button type="button" class="photo-upload-btn" id="photoUploadBtn" aria-label="Upload photo">+</button>
+                    <input type="file" id="photoUploadInput" accept="image/*" multiple hidden>
+                </div>
+
+                <p class="customization-processing" id="customizationProcessing">Processing photo…</p>
+                <p class="customization-status" id="customizationStatus"></p>
+
+            </div>
+
+            <div id="cartPurchaseBlock" style="display:none;">
+
+                <div class="qty-selector">
+                    <span class="size-label">Quantity</span>
+                    <div class="qty-selector-control">
+                        <button type="button" id="qtyMinus">−</button>
+                        <span id="qtyValue">1</span>
+                        <button type="button" id="qtyPlus">+</button>
+                    </div>
+                </div>
+
+                <button id="addToCartBtn" class="whatsapp-order-btn add-to-cart-btn" type="button">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <p class="product-note" id="productNote">
+                Add this item to your cart and complete your order securely
+                on the website.
+            </p>
+
+        </div>
+
+    </section>
+
+    <h2 class="related-heading">You May Also Like</h2>
+    <div id="relatedProducts"></div>
+
+    <footer>
+
+        <img src="images/softlaunchlogo.webp" class="footer-logo" alt="Soft Launch">
+        <h2>Soft Launch</h2>
+        <p>Luxury Personalized Gifting House</p>
+
+        <div class="footer-links">
+            <a href="collections.html">Collections</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="exchange-policy.html">Exchange Policy</a>
+            <a href="terms.html">Terms &amp; Conditions</a>        </div>
+
+        <small>© 2026 Soft Launch. All Rights Reserved.</small>
+
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/product-page.js"></script>
+
+</body>
+
+</html>

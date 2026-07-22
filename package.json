@@ -1,0 +1,12 @@
+{
+  "name": "soft-launch-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Soft Launch storefront with Razorpay checkout and Shipmozo shipping (Vercel serverless functions)",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "razorpay": "^2.9.4"
+  }
+}
