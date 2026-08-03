@@ -1283,15 +1283,15 @@ const products = [
 
     button: "Customize Yours",
 
-    stock: "",
+    stock: "Out of Stock",
 
-    inventory: 999,
+    inventory: 0,
 
     shipping: "Free Shipping",
 
     delivery: "4-7 Business Days",
 
-    badge: "Best Seller"
+    badge: "Out of Stock"
 },
 {
     name: "Custom Photo Canvas Print",
