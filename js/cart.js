@@ -70,6 +70,12 @@
 
     function addToCart(product, qty, size, customization) {
 
+        const isOutOfStock = product.inventory <= 0 || product.stock === "Out of Stock";
+        if (isOutOfStock) {
+            console.warn(`"${product.name}" is out of stock and cannot be added to the cart.`);
+            return;
+        }
+
         const cart = getCart();
 
         // Customized items (photo + notes) each represent a distinct
