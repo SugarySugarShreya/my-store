@@ -190,11 +190,15 @@ if (productGrid && typeof products !== "undefined") {
         const mainImg = `images/${product.folder}/${product.cover}`;
         const hoverImg = `images/${product.folder}/${product.gallery[1] || product.cover}`;
 
+        const outOfStock = product.inventory <= 0 || product.stock === "Out of Stock";
+
         productGrid.innerHTML += `
 
-<div class="product-card">
+<div class="product-card${outOfStock ? " product-card--oos" : ""}">
 
-    ${product.badge ? `<span class="product-badge">${product.badge}</span>` : ""}
+    ${outOfStock
+        ? `<span class="product-badge product-badge--oos">Out of Stock</span>`
+        : (product.badge ? `<span class="product-badge">${product.badge}</span>` : "")}
 
     <img
         class="product-image"
