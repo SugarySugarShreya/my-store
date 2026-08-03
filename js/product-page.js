@@ -64,8 +64,11 @@ if (product) {
     if (product.reviews) {
         reviewsEl.textContent = `(${product.reviews} reviews)`;
     }
+    const isOutOfStock = product.inventory <= 0 || product.stock === "Out of Stock";
+
     if (product.stock) {
         stockEl.textContent = `• ${product.stock}`;
+        stockEl.classList.toggle("out-of-stock-text", isOutOfStock);
     }
 
     // =====================
@@ -119,6 +122,19 @@ if (product) {
 
     noteEl.textContent =
         "Add this to your cart, then checkout securely when you're ready.";
+
+    const addToCartBtn = document.getElementById("addToCartBtn");
+    const qtyMinusBtn = document.getElementById("qtyMinus");
+    const qtyPlusBtn = document.getElementById("qtyPlus");
+
+    if (isOutOfStock) {
+        addToCartBtn.textContent = "Out of Stock";
+        addToCartBtn.disabled = true;
+        qtyMinusBtn.disabled = true;
+        qtyPlusBtn.disabled = true;
+        noteEl.textContent =
+            "This item is currently out of stock. We are not accepting new orders for it right now.";
+    }
 
     // ---- Size selector (Oversized Tees only) ----
 
@@ -276,6 +292,10 @@ if (product) {
 
     document.getElementById("addToCartBtn").addEventListener("click", () => {
 
+        if (isOutOfStock) {
+            return;
+        }
+
         if (product.needsPhoto && uploadedPhotos.length === 0) {
             showCustomizationError("Please upload at least one photo before adding to cart.");
             customizationBlock.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -322,12 +342,15 @@ if (product) {
     related.forEach(item => {
 
         const cover = `images/${item.folder}/${item.cover}`;
+        const itemOutOfStock = item.inventory <= 0 || item.stock === "Out of Stock";
 
         relatedGrid.innerHTML += `
 
-<div class="product-card">
+<div class="product-card${itemOutOfStock ? " product-card--oos" : ""}">
 
-    ${item.badge ? `<span class="product-badge">${item.badge}</span>` : ""}
+    ${itemOutOfStock
+        ? `<span class="product-badge product-badge--oos">Out of Stock</span>`
+        : (item.badge ? `<span class="product-badge">${item.badge}</span>` : "")}
 
     <img class="product-image" src="${cover}" alt="${item.name}">
 
