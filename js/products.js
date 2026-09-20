@@ -1384,5 +1384,315 @@ const products = [
     delivery: "3-5 Business Days",
 
     badge: "Best Seller"
-}
+},
+
+
+
+    {
+        name: "The Fallen Acid Wash Oversized Graphic T-Shirt",
+
+        category: "Oversized Tees",
+        folder: "tees",
+        collection: ["Demonic Collection", "Acid Wash"],
+
+        slug: "the-fallen-oversized-graphic-tshirt",
+
+        cover: "the_fallen_web.png",
+
+        gallery: [
+            "the_fallen_web.png"
+        ],
+
+        description: "Once angels, now only shadows. The Fallen bears a haunting back graphic of a chained, winged demon crouched in despair — a fallen celestial stripped of grace. Printed on premium heavyweight acid-washed cotton for a raw, distressed finish. Part of the Demonic Collection 001/7.",
+
+        price: 999,
+
+        originalPrice: 0,
+
+        discount: 0,
+
+        rating: 5.0,
+
+        reviews: 0,
+
+        sku: "DEM001",
+
+        purchaseType: "cart",
+
+        button: "Add to Cart",
+
+        stock: "In Stock",
+
+        inventory: 30,
+
+        shipping: "Free Shipping",
+
+        delivery: "3-5 Business Days",
+
+        badge: "Acid Wash"
+    },
+
+    {
+        name: "The Devourer Acid Wash Oversized Graphic T-Shirt",
+
+        category: "Oversized Tees",
+        folder: "tees",
+        collection: ["Demonic Collection", "Acid Wash"],
+
+        slug: "the-devourer-oversized-graphic-tshirt",
+
+        cover: "the_devourer_web.png",
+
+        gallery: [
+            "the_devourer_web.png"
+        ],
+
+        description: "All things feed. All things fall. The Devourer remains. A massive, teeth-baring void creature looms across the back of this acid-washed heavyweight tee — bold metal typography and sleeve star accents complete the look. Built for those who walk toward the abyss.",
+
+        price: 999,
+
+        originalPrice: 0,
+
+        discount: 0,
+
+        rating: 5.0,
+
+        reviews: 0,
+
+        sku: "DEM002",
+
+        purchaseType: "cart",
+
+        button: "Add to Cart",
+
+        stock: "In Stock",
+
+        inventory: 30,
+
+        shipping: "Free Shipping",
+
+        delivery: "3-5 Business Days",
+
+        badge: "Acid Wash"
+    },
+
+    {
+        name: "The Possessed Acid Wash Oversized Graphic T-Shirt",
+
+        category: "Oversized Tees",
+        folder: "tees",
+        collection: ["Demonic Collection", "Acid Wash"],
+
+        slug: "the-possessed-oversized-graphic-tshirt",
+
+        cover: "the_possesed_web.png",
+
+        gallery: [
+            "the_possesed_web.png"
+        ],
+
+        description: "There was never anyone else. A multi-eyed demonic entity fused with a hollow human shell dominates the back of this premium acid-washed tee. Some voices never leave — this piece wears that truth on its back. Part of the Demonic Collection.",
+
+        price: 999,
+
+        originalPrice: 0,
+
+        discount: 0,
+
+        rating: 5.0,
+
+        reviews: 0,
+
+        sku: "DEM003",
+
+        purchaseType: "cart",
+
+        button: "Add to Cart",
+
+        stock: "In Stock",
+
+        inventory: 30,
+
+        shipping: "Free Shipping",
+
+        delivery: "3-5 Business Days",
+
+        badge: "Acid Wash"
+    },
+
+    {
+        name: "The Gatekeeper Acid Wash Oversized Graphic T-Shirt",
+
+        category: "Oversized Tees",
+        folder: "tees",
+        collection: ["Demonic Collection", "Acid Wash"],
+
+        slug: "the-gatekeeper-oversized-graphic-tshirt",
+
+        cover: "the_gatekeeper_web.png",
+
+        gallery: [
+            "the_gatekeeper_web.png"
+        ],
+
+        description: "No soul passes. A colossal multi-limbed demon guards the threshold between worlds — skulls, chains and three lone figures stand beneath it in the darkness. Printed across the full back of a premium heavyweight acid-washed tee. The gate is sealed.",
+
+        price: 999,
+
+        originalPrice: 0,
+
+        discount: 0,
+
+        rating: 5.0,
+
+        reviews: 0,
+
+        sku: "DEM004",
+
+        purchaseType: "cart",
+
+        button: "Add to Cart",
+
+        stock: "In Stock",
+
+        inventory: 30,
+
+        shipping: "Free Shipping",
+
+        delivery: "3-5 Business Days",
+
+        badge: "Acid Wash"
+    },
+
+    {
+        name: "The Hellbringer Oversized Graphic T-Shirt",
+
+        category: "Oversized Tees",
+        folder: "tees",
+        collection: ["Demonic Collection", "Acid Wash"],
+
+        slug: "the-hellbringer-oversized-graphic-tshirt",
+
+        cover: "the_hell_bringer_web.png",
+
+        gallery: [
+            "the_hell_bringer_web.png"
+        ],
+
+        description: "He descended when the heavens closed. The Hellbringer — a blood-red winged demon — tears through the back of this acid-washed heavyweight tee in full glory. Some gates should never be opened. This one already has. Part of the Demonic Collection.",
+
+        price: 999,
+
+        originalPrice: 0,
+
+        discount: 0,
+
+        rating: 5.0,
+
+        reviews: 0,
+
+        sku: "DEM005",
+
+        purchaseType: "cart",
+
+        button: "Add to Cart",
+
+        stock: "In Stock",
+
+        inventory: 30,
+
+        shipping: "Free Shipping",
+
+        delivery: "3-5 Business Days",
+
+        badge: "Acid Wash"
+    },
+
+    {
+        name: "The Sovereign Acid Wash Oversized Graphic T-Shirt",
+
+        category: "Oversized Tees",
+        folder: "tees",
+        collection: ["Demonic Collection", "Acid Wash"],
+
+        slug: "the-sovereign-oversized-graphic-tshirt",
+
+        cover: "the_sovereign_web.png",
+
+        gallery: [
+            "the_sovereign_web.png"
+        ],
+
+        description: "He who rules the abyss. A winged demon king enthroned above a sea of hooded worshippers — the abyss bows to no one. This premium acid-washed heavyweight tee carries a full back print of pure dark dominion. The Sovereign has arrived.",
+
+        price: 999,
+
+        originalPrice: 0,
+
+        discount: 0,
+
+        rating: 5.0,
+
+        reviews: 0,
+
+        sku: "DEM006",
+
+        purchaseType: "cart",
+
+        button: "Add to Cart",
+
+        stock: "In Stock",
+
+        inventory: 30,
+
+        shipping: "Free Shipping",
+
+        delivery: "3-5 Business Days",
+
+        badge: "Acid Wash"
+    },
+
+    {
+        name: "The Damned Acid Wash Oversized Graphic T-Shirt",
+
+        category: "Oversized Tees",
+        folder: "tees",
+        collection: ["Demonic Collection", "Acid Wash"],
+
+        slug: "the-damned-oversized-graphic-tshirt",
+
+        cover: "the_damned_web.png",
+
+        gallery: [
+            "the_damned_web.png"
+        ],
+
+        description: "No soul returns. Est. in the Abyss // 06. A towering chained demon rises above a mass of reaching hands in this full back graphic — bold blackletter typography seals the curse. Printed on premium heavyweight acid-washed cotton. The last of the Demonic Collection.",
+
+        price: 999,
+
+        originalPrice: 0,
+
+        discount: 0,
+
+        rating: 5.0,
+
+        reviews: 0,
+
+        sku: "DEM007",
+
+        purchaseType: "cart",
+
+        button: "Add to Cart",
+
+        stock: "In Stock",
+
+        inventory: 30,
+
+        shipping: "Free Shipping",
+
+        delivery: "3-5 Business Days",
+
+        badge: "Acid Wash"
+    }
 ];
